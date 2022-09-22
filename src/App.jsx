@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <Nav />
     </div>
   );
