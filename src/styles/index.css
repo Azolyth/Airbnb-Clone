@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Layout */
-
-.container {
-}
 
 nav {
   display: flex;
@@ -14,7 +12,31 @@ nav {
   box-shadow: 0px 2.4px 9px #ccc;
 }
 
+header {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .logo {
   max-width: 100px;
   margin-left: 2em;
+}
+
+.photo-grid {
+  width: 100%;
+  margin-top: 2em;
+}
+
+/* Typography */
+
+.hero-title {
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin: 0.775em 0 0 0;
+}
+
+.hero-body {
+  font-weight: 300;
+  font-size: 1.4rem;
+  max-width: 400px;
 }
