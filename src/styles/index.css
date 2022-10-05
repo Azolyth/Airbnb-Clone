@@ -12,7 +12,7 @@ nav {
   box-shadow: 0px 2.4px 9px #ccc;
 }
 
-header {
+.hero {
   width: 85%;
   margin: 0 auto;
 }
@@ -27,16 +27,46 @@ header {
   margin-top: 2em;
 }
 
+.card {
+  padding: 2em;
+}
+
+.card-image {
+  border-radius: 7px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+}
+
+.card-star {
+  margin: 0 0.4em 0 0;
+}
+
 /* Typography */
 
-.hero-title {
+.hero-header {
   font-weight: 600;
   font-size: 3.2rem;
   margin: 0.775em 0 0 0;
 }
 
-.hero-body {
+.hero-body,
+.card-title,
+.card-rating {
   font-weight: 300;
+}
+
+.hero-body {
   font-size: 1.4rem;
   max-width: 400px;
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: 600;
 }
