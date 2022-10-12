@@ -8,24 +8,14 @@ import Card from './components/Card';
 
 const App = () => {
   const cards = data.map((info) => {
-    return (
-      <Card
-        key={info.id}
-        title={info.title}
-        price={info.price}
-        coverImg={info.coverImg}
-        location={info.location}
-        rating={info.stats.rating}
-        reviewCount={info.stats.reviewCount}
-      />
-    );
+    return <Card key={info.id} {...info} />;
   });
 
   return (
     <div className='container'>
       <Nav />
       <Hero />
-      {cards}
+      <div className='card-flex'>{cards}</div>
     </div>
   );
 };
