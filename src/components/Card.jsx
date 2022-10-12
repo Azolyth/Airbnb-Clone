@@ -5,7 +5,7 @@ import cardStar from '../images/star.png';
 const Card = (props) => {
   return (
     <section className='card'>
-      <img className='card-image' src={`../../public/card-images/${props.coverImg}`} />
+      <img className='card-image' src={`../../src/images/${props.coverImg}`} />
       <div className='card-rating'>
         <img className='card-star' src={cardStar} />
         <p className='card-rating-info'>

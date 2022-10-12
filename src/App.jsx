@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 import Card from './components/Card';
 
 const App = () => {
-  const cardInfo = data.map((info) => {
+  const cards = data.map((info) => {
     return (
       <Card
         key={info.id}
@@ -25,7 +25,7 @@ const App = () => {
     <div className='container'>
       <Nav />
       <Hero />
-      {cardInfo}
+      {cards}
     </div>
   );
 };
