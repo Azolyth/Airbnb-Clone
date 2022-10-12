@@ -1,19 +1,20 @@
 import React from 'react';
 
-import cardImage from '../images/katie-zaferes.png';
 import cardStar from '../images/star.png';
 
-const Card = () => {
+const Card = (props) => {
   return (
     <section className='card'>
-      <img className='card-image' src={cardImage} />
+      <img className='card-image' src={`../../public/card-images/${props.coverImg}`} />
       <div className='card-rating'>
         <img className='card-star' src={cardStar} />
-        <p className='card-rating-info'>5.0 (6) • USA</p>
+        <p className='card-rating-info'>
+          {props.rating}({props.reviewCount}) • {props.location}
+        </p>
       </div>
-      <p className='card-title'>Life lessons with Katie Zaferes</p>
+      <p className='card-title'>{props.title}</p>
       <p className='card-pricing'>
-        <span className='bold'>From $136</span> / person
+        <span className='bold'>From ${props.price}</span> / person
       </p>
     </section>
   );
